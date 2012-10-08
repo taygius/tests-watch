@@ -18,9 +18,9 @@ sudo apt-get install inotify-tools
 3)
 Setup patched notify-osd 
 ``` bash
-sudo add-apt-repository ppa:leolik/leolik \n
-sudo apt-get update && sudo apt-get upgrade \n
-sudo apt-get install libnotify-bin \n
+sudo add-apt-repository ppa:leolik/leolik 
+sudo apt-get update && sudo apt-get upgrade 
+sudo apt-get install libnotify-bin 
 echo 'bubble-expire-timeout = 1sec' >> ~/.notify-osd
 ```
 
