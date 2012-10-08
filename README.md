@@ -4,37 +4,40 @@ tests-watch
 Auto running tests for nodejs/coffee project in Ubuntu
    and notificating to notify-osd
 
-## Dependences:
+## Dependences
 
 1)
 Working on ubuntu over 11.04
 
 2)
 Setup 'inotify-tools' for watching file changes
-`` bash
+``` bash
 sudo apt-get install inotify-tools
-``
+```
 
 3)
-Setup patched notify-osd: 
-`` bash
-sudo add-apt-repository ppa:leolik/leolik
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install libnotify-bin
+Setup patched notify-osd 
+``` bash
+sudo add-apt-repository ppa:leolik/leolik \n
+sudo apt-get update && sudo apt-get upgrade \n
+sudo apt-get install libnotify-bin \n
 echo 'bubble-expire-timeout = 1sec' >> ~/.notify-osd
-``
+```
 
 ## How to run
-copy test-watch.sh to project directory
-run sh ./test-watch.sh in console
-After every file changes in directory will run test and result will send to notify-ost
+
+* copy test-watch.sh to project directory
+* run sh ./test-watch.sh in console
+* After every file changes in directory will run test and result will send to notify-ost
 
 ## Options
+
 Also you can edit follow options in 'test-watcher.sh':
-PROJECT - current project name
-TEST_FOLDER - folder with tests 
-REPORTER - see reporter option for nodeunit
-TIME - time of showing message
+
+* PROJECT - current project name
+* TEST_FOLDER - folder with tests 
+* REPORTER - see reporter option for nodeunit
+* TIME - time of showing message
 
 ## License
 
