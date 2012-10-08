@@ -12,8 +12,9 @@ Working on ubuntu over 11.04
 2)
 Setup 'inotify-tools' for watching file changes
 `` bash
-sudo apt-get install inotify-tools #for 
+sudo apt-get install inotify-tools
 ``
+
 3)
 Setup patched notify-osd: 
 `` bash
